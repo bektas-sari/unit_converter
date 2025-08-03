@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title"><span class="icon">🔄</span>Unit Converter</h1>
+        <p class="header-subtitle">Convert Length, Weight, Temperature, and Volume</p>
+    </header>
+
+    <main class="main container">
+        <section class="category-selector">
+            <h2>Select Category</h2>
+            <div class="category-grid">
+                <button class="category-btn active" data-category="length">
+                    <span class="category-icon">📏</span> Length
+                </button>
+                <button class="category-btn" data-category="weight">
+                    <span class="category-icon">⚖️</span> Weight
+                </button>
+                <button class="category-btn" data-category="temperature">
+                    <span class="category-icon">🌡️</span> Temperature
+                </button>
+                <button class="category-btn" data-category="volume">
+                    <span class="category-icon">🧪</span> Volume
+                </button>
+            </div>
+        </section>
+
+        <section class="converter-container">
+            <form class="conversion-form" onsubmit="return false;">
+                <div class="input-group">
+                    <label for="from-value">From</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="from-value" placeholder="Enter value">
+                        <select id="from-unit"></select>
+                    </div>
+                </div>
+
+                <div class="swap-container">
+                    <button id="swap-units" class="swap-btn" title="Swap Units">
+                        <span class="swap-icon">⇄</span>
+                    </button>
+                </div>
+
+                <div class="input-group">
+                    <label for="to-value">To</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="to-value" placeholder="Converted value" readonly>
+                        <select id="to-unit"></select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="conversion-result">
+                <div id="result-display" class="result-display">
+                    Enter a value to see the conversion
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section">
+            <div class="history-header">
+                <h2>Conversion History</h2>
+                <button id="clear-history" class="clear-history-btn" disabled>🗑️ Clear History</button>
+            </div>
+            <div id="history-container" class="history-container">
+                <!-- History will be populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made with ❤️ by AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
