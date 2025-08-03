@@ -62,14 +62,6 @@ open index.html  # or double-click it
 
 ---
 
-## 📸 Screenshots
-
-| Desktop View                                   | Mobile View                                  |
-| ---------------------------------------------- | -------------------------------------------- |
-| ![Desktop Screenshot](screenshots/desktop.png) | ![Mobile Screenshot](screenshots/mobile.png) |
-
----
-
 ## 🧑‍💻 Developer
 
 **Bektas Sari**
